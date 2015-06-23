@@ -48,7 +48,7 @@ namespace Dashboard.Core.Nancy.Modules
 
         public dynamic LogOut(dynamic o)
         {
-            return this.LogoutAndRedirect("/login");
+            return this.LogoutAndRedirect("../#/login");
         }
     }
 }

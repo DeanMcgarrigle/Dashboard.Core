@@ -2,7 +2,6 @@ export default ngModule => {
 
     var routes = [];
 
-
     routes.push({
         name: "login",
         config: {url: "/login", template: require("../templates/login.html")},

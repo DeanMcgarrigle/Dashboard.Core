@@ -4,6 +4,7 @@ export default ngModule => {
 
         return {
             response: function (response) {
+
                 if(response.status == 204){
 
                     //console.log("Response Error 204");
@@ -23,7 +24,10 @@ export default ngModule => {
         .config(['$httpProvider', '$locationProvider', function ($httpProvider, $locationProvider) {
 
             //Http Intercpetor to check auth failures for xhr requests
-            $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode({
+                enabled: false
+            });
+
 
             //initialize get if not there
             if (!$httpProvider.defaults.headers.get) { $httpProvider.defaults.headers.get = {}; } // Answer
