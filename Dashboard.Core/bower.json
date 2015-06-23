@@ -24,6 +24,7 @@
     "angular-cookies": "~1.4.0",
     "angular-perfect-scrollbar": "~0.0.4",
     "fontawesome": "~4.3.0",
-    "moment": "~2.10.3"
+    "moment": "~2.10.3",
+    "c3": "~0.4.10"
   }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Dashboard.Core.Nancy.Modules;
 using Nancy;
 using Nancy.Authentication.Forms;
 using Nancy.Bootstrapper;
@@ -46,7 +47,7 @@ namespace Dashboard.Core.Nancy
         protected override void ConfigureRequestContainer(TinyIoCContainer container, NancyContext context)
         {
             base.ConfigureRequestContainer(container, context);
-            //container.Register<IUserMapper, DatabaseUser>();
+            container.Register<IUserMapper, DatabaseUser>();
         }
 
         protected override void RequestStartup(TinyIoCContainer container, IPipelines pipelines, NancyContext context)
@@ -55,7 +56,7 @@ namespace Dashboard.Core.Nancy
 
             var formsAuthConfiguration = new FormsAuthenticationConfiguration
             {
-                RedirectUrl = "../#/login",
+                RedirectUrl = "../login",
                 DisableRedirect = true,
                 UserMapper = container.Resolve<IUserMapper>(),
             };

@@ -20,11 +20,10 @@ export default ngModule => {
             }
         }
     }])
-
         .config(['$httpProvider', '$locationProvider', function ($httpProvider, $locationProvider) {
 
             //Http Intercpetor to check auth failures for xhr requests
-            $locationProvider.html5mode(true);
+            $locationProvider.html5Mode(true);
 
             //initialize get if not there
             if (!$httpProvider.defaults.headers.get) { $httpProvider.defaults.headers.get = {}; } // Answer

@@ -28,7 +28,7 @@ export default ngModule => {
             else {
                 return datacontext.userLogin(vm.user)
                     .then(function (data) {
-                        $location.path('#/');
+                        $location.path('/');
                         return data;
                     }, function (err) {
                         if(err.status == 401)

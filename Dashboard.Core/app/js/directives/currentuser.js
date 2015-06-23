@@ -1,6 +1,6 @@
 export default ngModule => {
 
-    ngModule.directive('getCurrentUser', [function ($scope, datacontext) {
+    ngModule.directive('getCurrentUser', [function () {
 
         return {
             restrict: 'E',

@@ -1,7 +1,7 @@
 export default ngModule => {
     var controllerId = 'home';
 
-    ngModule.controller(controllerId, function ($location, $scope, $rootScope, $cookies, $interval, $q, common) {
+    ngModule.controller(controllerId, function ($location, $scope, $rootScope, $cookies, $interval, $q, common, datacontext) {
 
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
@@ -15,18 +15,12 @@ export default ngModule => {
         activate();
 
         function activate() {
-            common.activateController([getHome()], controllerId)
+            common.activateController([], controllerId)
                 .then(function () {
                     log('Activated Home view');
                 });
         }
 
-        function getHome() {
-            return datacontext.getHome().then(function (data) {
-                vm.home = data;
-                console.log(vm.home);
-            })
-        }
 
     });
 }

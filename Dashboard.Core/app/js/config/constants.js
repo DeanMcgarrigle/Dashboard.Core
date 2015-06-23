@@ -11,7 +11,7 @@ export default ngModule => {
 
     routes.push({
         name: "home",
-        config: {url: "/", template: require("../templates/terminals.html"), icon: "th-large"}
+        config: {url: "/", template: require("../templates/home.html"), icon: "th-large"}
     });
 
     routes.push({

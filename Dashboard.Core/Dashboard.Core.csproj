@@ -127,7 +127,10 @@
     </Compile>
     <Compile Include="Nancy\Bootstrapper.cs" />
     <Compile Include="Nancy\ConnectionProvider.cs" />
+    <Compile Include="Nancy\Modules\DTO Transfer\Login.cs" />
+    <Compile Include="Nancy\Modules\DTO\LoginObject.cs" />
     <Compile Include="Nancy\Modules\HomeModule.cs" />
+    <Compile Include="Nancy\Modules\LoginModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Installer\ProjectInstaller.cs">
       <SubType>Component</SubType>
@@ -154,10 +157,7 @@
     </None>
     <None Include="web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Nancy\Modules\DTO Transfer\" />
-    <Folder Include="Nancy\Modules\DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Installer\ProjectInstaller.resx">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>

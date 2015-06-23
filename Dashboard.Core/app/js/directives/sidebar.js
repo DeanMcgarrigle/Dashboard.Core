@@ -16,11 +16,9 @@ export default ngModule => {
 
                     if($scope.terminalName != undefined)
                     {
-                        console.log("inside");
                         $interval.cancel(interval);
                     }
 
-                    console.log($scope.terminalName, $scope.terminalDisplayName);
                 }, 1000);
 
                 $scope.routes = _.filter(routes, function (r) {
