@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceProcess;
+using Dashboard.Core.Installer;
 
 namespace Dashboard.Core
 {
@@ -10,6 +8,24 @@ namespace Dashboard.Core
     {
         static void Main(string[] args)
         {
+
+#if DEBUG
+            var service = new WinService();
+            service.Start();
+            Console.WriteLine("Service Running...");
+            Console.ReadLine();
+#else
+            RunService();
+#endif
+        }
+
+        static void RunService()
+        {
+            var ServicesToRun = new ServiceBase[]
+            {
+                new WinService()
+            };
+            ServiceBase.Run(ServicesToRun);
         }
     }
 }
