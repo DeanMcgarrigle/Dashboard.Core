@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -149,7 +150,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="app\fonts\fontawesome-webfont.eot" />
+    <None Include="app\fonts\fontawesome-webfont.ttf" />
+    <None Include="app\fonts\fontawesome-webfont.woff" />
+    <None Include="app\fonts\fontawesome-webfont.woff2" />
+    <None Include="app\fonts\FontAwesome.otf" />
+    <None Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="app\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="app\fonts\montserrat-regular-webfont.eot" />
+    <None Include="app\fonts\montserrat-regular-webfont.ttf" />
+    <None Include="app\fonts\montserrat-regular-webfont.woff" />
+    <None Include="app\styles\bootstrap-theme.css.map" />
+    <None Include="app\styles\bootstrap.css.map" />
+    <None Include="bower.json" />
     <None Include="Nancy\Views\index.cshtml" />
+    <None Include="package.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -157,11 +172,86 @@
     </None>
     <None Include="web.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Installer\ProjectInstaller.resx">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="app\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\fonts\montserrat-regular-webfont.svg" />
+    <Content Include="app\fonts\test.txt" />
+    <Content Include="app\images\MachLogo.png" />
+    <Content Include="app\images\machorb.ico" />
+    <Content Include="app\images\machorb3.ico" />
+    <Content Include="app\js\common\common.js" />
+    <Content Include="app\js\common\filters.js" />
+    <Content Include="app\js\common\index.js" />
+    <Content Include="app\js\common\logger.js" />
+    <Content Include="app\js\config\constants.js" />
+    <Content Include="app\js\config\index.js" />
+    <Content Include="app\js\config\interceptor.js" />
+    <Content Include="app\js\config\routes.js" />
+    <Content Include="app\js\config\values.js" />
+    <Content Include="app\js\controllers\error.js" />
+    <Content Include="app\js\controllers\home.js" />
+    <Content Include="app\js\controllers\index.js" />
+    <Content Include="app\js\controllers\login.js" />
+    <Content Include="app\js\directives\currentuser.js" />
+    <Content Include="app\js\directives\index.js" />
+    <Content Include="app\js\directives\page.html" />
+    <Content Include="app\js\directives\page.js" />
+    <Content Include="app\js\directives\sidebar.html" />
+    <Content Include="app\js\directives\sidebar.js" />
+    <Content Include="app\js\directives\validation.js" />
+    <Content Include="app\js\index.js" />
+    <Content Include="app\js\services\datacontext.js" />
+    <Content Include="app\js\services\index.js" />
+    <Content Include="app\js\templates\error.html" />
+    <Content Include="app\js\templates\home.html" />
+    <Content Include="app\js\templates\login.html" />
+    <Content Include="app\styles\bootstrap-datetimepicker.css" />
+    <Content Include="app\styles\bootstrap-datetimepicker.min.css" />
+    <Content Include="app\styles\bootstrap-sortable.css" />
+    <Content Include="app\styles\bootstrap-theme.css" />
+    <Content Include="app\styles\bootstrap-theme.min.css" />
+    <Content Include="app\styles\bootstrap-toggle.min.css" />
+    <Content Include="app\styles\bootstrap.css" />
+    <Content Include="app\styles\bootstrap.min.css" />
+    <Content Include="app\styles\c3.css" />
+    <Content Include="app\styles\custom.css" />
+    <Content Include="app\styles\datepicker.css" />
+    <Content Include="app\styles\datepicker3.css" />
+    <Content Include="app\styles\font-awesome.css" />
+    <Content Include="app\styles\perfect-scrollbar.css" />
+    <Content Include="app\styles\rdash.css" />
+    <Content Include="app\styles\rdash.min.css" />
+    <Content Include="app\styles\toastr.css" />
+    <Content Include="gulpfile.js" />
+    <Content Include="gulp\config.js" />
+    <Content Include="gulp\index.js" />
+    <Content Include="gulp\tasks\browserify.js" />
+    <Content Include="gulp\tasks\clean.js" />
+    <Content Include="gulp\tasks\deploy.js" />
+    <Content Include="gulp\tasks\development.js" />
+    <Content Include="gulp\tasks\fonts.js" />
+    <Content Include="gulp\tasks\gzip.js" />
+    <Content Include="gulp\tasks\images.js" />
+    <Content Include="gulp\tasks\lint.js" />
+    <Content Include="gulp\tasks\production.js" />
+    <Content Include="gulp\tasks\protractor.js" />
+    <Content Include="gulp\tasks\styles.js" />
+    <Content Include="gulp\tasks\test.js" />
+    <Content Include="gulp\tasks\unit.js" />
+    <Content Include="gulp\tasks\views.js" />
+    <Content Include="gulp\tasks\watch.js" />
+    <Content Include="gulp\util\bundleLogger.js" />
+    <Content Include="gulp\util\handleErrors.js" />
+    <Content Include="gulp\util\scriptFilter.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

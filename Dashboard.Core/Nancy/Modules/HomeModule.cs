@@ -1,9 +1,4 @@
-﻿using System;
-using System.Configuration;
-using Dashboard.Core.Properties;
-using Nancy;
-using Nancy.Responses;
-using Nancy.Security;
+﻿using Nancy;
 
 namespace Dashboard.Core.Nancy.Modules
 {
